@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#content{
+		background-color: rgb(173,201,130);
+		height: 585px;
+    width: 598px;
+
+	}
+	img{
+		padding: 40px;
+		
+
+	}
+</style>
+<body>
+<h1>Playing With </h1>
+
+<div class="buttons">
+	<label for="spacing">Spacing</label>
+	<input type="range" name="" id="space" min="0" max="200" value="10">
+
+	<label for="blur">Blur</label>
+	<input type="range" id="bb" value="2%" min="0%" max="100%">
+
+	<label for="colour">Colour</label>
+	<input type="color" name="" id="color" value="#172213">
+
+
+
+
+
+</div>
+
+<div id="content">
+	<img src="https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp" height="500px" width="500px" id="img">
+</div>
+
+
+<script type="text/javascript">
+	space.onchange=()=>{
+		img.style.padding=`${space.value}px`;
+		
+	}
+
+	bb.onchange=()=>{
+		img.style.opacity=`${bb.value}%`
+	}
+
+	color.onchange=()=>{
+		content.style.backgroundColor=`${color.value}`
+	}
+
+
+
+
+
+
+</script>
+</body>
+</html>
